@@ -1,0 +1,14 @@
+header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+    .logo {
+        margin: auto auto auto 1rem;
+    
+        img {
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails de l'espace - Coworking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="logo.png" alt="Logo Coworking">
+    </div>
+    <nav>
+      <div id="links">
+        <a href="index.html">Accueil</a>
+        <a href="liste.html">Nos espaces</a>
+        <a href="#" id="connexion">Connecté</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="list">
+    <div id="header-details">
+      <h1>Nom de l'espace</h1>
+      <img src="espace1.jpg" alt="Espace 1">
+      <a href="#" id="reservation">Réserver</a>
+    </div>
+    <div id="informations-details">
+      <p>Prix par jour : 20€</p>
+      <p>Nombre de personnes possibles : 10</p>
+      <p>Description de l'espace.</p>
+    </div>
+    <div id="commentaires">
+      <h2>Commentaires</h2>
+      <!-- Exemple de Card Commentaire -->
+      <div class="card-commentaire">
+        <h3>Titre du commentaire</h3>
+        <p>Date et heure</p>
+        <p>Contenu du commentaire.</p>
+      </div>
+      <!-- Répétez la Card Commentaire pour chaque commentaire -->
+      <div id="ajout-commentaire">
+        <h2>Ajouter un commentaire</h2>
+        <form>
+          <label for="titre">Titre :</label>
+          <input type="text" id="titre" name="titre" required>
+          <label for="contenu">Contenu :</label>
+          <textarea id="contenu" name="contenu" required></textarea>
+          <button type="submit">Ajouter commentaire</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 - Tous droits réservés</p>
+  </footer>
+</body>
+
+</html>

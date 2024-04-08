@@ -1,0 +1,167 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+header nav #logo img {
+  height: 50px;
+}
+
+header nav #links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav #links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+main #presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #presentation #logo-coworking img {
+  height: 200px;
+  margin-right: 20px;
+}
+
+main #presentation #texte-presentation h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+} /* Ajoutez ce CSS à votre fichier style.css existant */
+
+main.list {
+  display: block;
+}
+
+main #header-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main #header-details h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+main #header-details img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+main #header-details #reservation {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main #header-details #reservation:hover {
+  background-color: #555;
+}
+
+main #informations-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 20px 20px;
+}
+
+main #commentaires {
+  padding: 20px;
+}
+
+main #commentaires h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main #commentaires .card-commentaire {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+main #commentaires .card-commentaire h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+main #commentaires #ajout-commentaire {
+  margin-top: 20px;
+}
+
+main #commentaires #ajout-commentaire h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main #commentaires #ajout-commentaire form {
+  display: flex;
+  flex-direction: column;
+}
+
+main #commentaires #ajout-commentaire form label {
+  margin-bottom: 5px;
+}
+
+main #commentaires #ajout-commentaire form input,
+main #commentaires #ajout-commentaire form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+main #commentaires #ajout-commentaire form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+main #commentaires #ajout-commentaire form button:hover {
+  background-color: #555;
+}

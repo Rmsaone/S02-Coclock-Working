@@ -1,0 +1,20 @@
+@use "../styles/buttons";
+@use "../styles/inputs";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+
+  .themeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .themeFormInput, .themeFormTextarea {
+    @include inputs.classic;
+  }
+  .themeButton {
+    @include buttons.dark;
+  }
+}

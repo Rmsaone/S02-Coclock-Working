@@ -1,0 +1,35 @@
+@use "../styles/buttons";
+@use "../styles/inputs";
+
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .themeForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+    width: 100%;
+    max-width: 480px;
+
+    .themeFormInput {
+      @include inputs.classic;
+    }
+    .themeButton {
+      @include buttons.dark;
+    }
+  }
+
+  .themeMinorLink {
+    text-decoration: none;
+    color: #213a35;
+    margin: 0.5rem auto;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

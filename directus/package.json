@@ -1,0 +1,15 @@
+{
+  "name": "directus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker compose up -d",
+    "data:reset": "docker compose down && sudo rm -rf data",
+    "backup": "./backup_bdd.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,25 @@
+@mixin classic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input, textarea {
+        background-color: #d1e5e0;
+        padding: 15px;
+        margin: 5px 0;
+        border-radius: 8px;
+        box-shadow: 0px 1px 1px #8b8b8b;
+        border-style: none;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #78a89e;
+            font-weight: bold;
+        }
+    }
+
+    label {
+        padding-top: 0.25rem;
+        font-weight: bold;
+    }
+}

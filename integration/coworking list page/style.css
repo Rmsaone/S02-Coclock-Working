@@ -1,0 +1,126 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+header nav #logo img {
+  height: 50px;
+}
+
+header nav #links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav #links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+main #presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #presentation #logo-coworking img {
+  height: 200px;
+  margin-right: 20px;
+}
+
+main #presentation #texte-presentation h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Ajoutez ce CSS à votre fichier style.css existant */
+
+main.list {
+  display: block;
+}
+main h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+main #liste-coworkings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.main #liste-coworkings .card-coworking {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.main #liste-coworkings .card-coworking .image img {
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.main #liste-coworkings .card-coworking .informations {
+  padding: 10px;
+}
+
+.main #liste-coworkings .card-coworking .lien-details {
+  margin-top: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.main #liste-coworkings .card-coworking .lien-details a {
+  color: white;
+  text-decoration: none;
+}
+
+.main #liste-coworkings .card-coworking .lien-details a:hover {
+  text-decoration: underline;
+}

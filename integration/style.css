@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url("./assets/fonts/Lato-Regular.ttf") format("TrueType"),
+    url("./assets/fonts/Lato-Bold.ttf") format("TrueType");
+  font-display: swap;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 60px;
+  flex-grow: 0;
+}
+
+header nav #logo img {
+  height: 50px;
+}
+
+header nav .links a {
+  color: inherit;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav .links a:hover {
+  text-decoration: underline;
+}
+
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+
+.brand {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("./assets/images/homepage-background.jpg") center/cover;
+}
+
+.brand--mobile,
+.links--mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .brand--desktop,
+  .links--desktop {
+    display: none;
+  }
+
+  .brand--mobile {
+    display: flex;
+  }
+
+  .links--mobile {
+    display: block;
+  }
+}
+
+.presentation {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.presentation__content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  flex-grow: 0;
+}
+
+/* decoupage */
+
+/* 
+
+.container.for-slice {
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.slice {
+  border: 5px solid;
+  position: relative;
+}
+
+.slice::after {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.slice--brand {
+  border-color: red;
+}
+
+.slice--brand::after {
+  content: "Brand Logo";
+}
+
+.slice--header {
+  border-color: blue;
+}
+
+.slice--header::after {
+  content: "Header";
+}
+
+.slice--main {
+  border-color: darkorange;
+}
+
+.slice--main::after {
+  content: "main";
+}
+
+.slice--footer {
+  border-color: green;
+}
+
+.slice--footer::after {
+  content: "footer";
+} */
